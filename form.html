@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div align=center class="box">
+        <h1>Calculator</h1>
+        <label> Input First value </label><input type="text" id="num"><br>
+        <label>Input Second value </label><input type="text" id="num1"><br><br><br><br>
+        <button onclick="sum()"><img src="111.png" style="height: 10px; width: 30px;"></button>
+        <button onclick="multi()"><img src="multi.png" style="height: 10px; width: 30px;"></button>
+        <button onclick="sub()"><img src="sub.png" style="height: 10px; width: 30px;"></button>
+        <button onclick="div()"><img src="div.png" style="height: 10px; width: 30px;"></button>
+        <p id="p"></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+
+
+
+        <script>
+            let a = document.getElementById("num");
+            let b = document.getElementById("num1");
+
+            let c = document.getElementById("p");
+
+            function sum() {
+
+                a = Number(a.value);
+                b = Number(b.value);
+                let d = a + b;
+                c.innerHTML = d;
+
+            }
+
+            function multi() {
+                let a = document.getElementById("num");
+                let b = document.getElementById("num1");
+
+                let c = document.getElementById("p1");
+                a = Number(a.value);
+                b = Number(b.value);
+                let d = a * b;
+                c.innerHTML = d;
+
+            }
+
+            function sub() {
+                let a = document.getElementById("num");
+                let b = document.getElementById("num1");
+
+                let c = document.getElementById("p2");
+                a = Number(a.value);
+                b = Number(b.value);
+                let d = a - b;
+                c.innerHTML = d;
+
+            }
+
+            function div() {
+                let a = document.getElementById("num");
+                let b = document.getElementById("num1");
+
+                let c = document.getElementById("p3");
+                a = Number(a.value);
+                b = Number(b.value);
+                let d = a / b;
+                c.innerHTML = d;
+
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
